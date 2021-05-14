@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.iconomenu {
+  width: 50px;
+}
+
+header {
+  width: 100%;
+  background: rgb(48, 128, 108);
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: none;
+  width: 52px;
+  height: 52px;
+  padding: 10px;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+  margin: 0px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.menu li:hover {
+  background: rgba(117, 73, 73, 0.1);
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  header label {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    background: rgb(48, 128, 108);
+    width: 30%;
+    margin-left: -30%;
+    transition: all 0.5s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu li {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+}
+
+#btn-menu:checked ~ .menu {
+  margin-left: 0%;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+#estructurahtml {
+  width: 500px;
+}
+
+#estructuracss {
+  width: 500px;
+}
+
+#estructurajs {
+  width: 500px;
+}
+
+#estructurapython {
+  width: 600px;
+}
+
+#nodejs {
+  width: 600px;
+}
