@@ -53,34 +53,6 @@ header label:hover {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  header label {
-    display: block;
-  }
-
-  .menu {
-    position: absolute;
-    background: rgb(48, 128, 108);
-    width: 30%;
-    margin-left: -30%;
-    transition: all 0.5s;
-  }
-
-  .menu ul {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .menu li {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-  }
-}
-
-#btn-menu:checked ~ .menu {
-  margin-left: 0%;
-}
-
 main {
   padding: 20px;
   text-align: center;
@@ -110,4 +82,65 @@ p {
 
 #nodejs {
   width: 600px;
+}
+
+@media (max-width: 768px) {
+  header label {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    background: rgb(48, 128, 108);
+    width: 30%;
+    margin-left: -30%;
+    transition: all 0.5s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu li {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+}
+
+#btn-menu:checked ~ .menu {
+  margin-left: 0%;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+  }
+
+  p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  #estructurahtml {
+    width: 400px;
+  }
+
+  #estructuracss {
+    width: 300px;
+  }
+
+  #estructurajs {
+    width: 300px;
+  }
+
+  #estructurapython {
+    width: 350px;
+  }
+
+  #nodejs {
+    width: 350px;
+  }
 }
